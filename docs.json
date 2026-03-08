@@ -7,6 +7,12 @@
     "light": "#EF4444",
     "dark": "#B91C1C"
   },
+  "redirects": [
+  {
+    "source": "/",
+    "destination": "/introduction"
+  }
+],
   "favicon": "/favicon.ico",
   "navigation": {
     "tabs": [
