@@ -88,6 +88,12 @@
       ]
     }
   ],
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/introduction"
+    }
+  ],
   "footerSocials": {
     "discord": "https://discord.gg/drakense"
   }
