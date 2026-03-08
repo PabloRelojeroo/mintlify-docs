@@ -1,0 +1,36 @@
+---
+title: Alerta de emergencia
+description: Sistema de alerta de emergencia (Frally) en Drakense.
+---
+Cuando estás en peligro y necesitas ayuda de tu equipo, puedes enviar una alerta de emergencia que notifica a todos tus compañeros conectados con tu ubicación exacta.
+
+## Cómo usarlo
+
+```
+/frally
+```
+
+## Qué pasa cuando activas la alerta
+
+1. Todos tus compañeros de equipo reciben un **mensaje clickeable** con tus coordenadas
+2. Se reproduce un **sonido de alerta** para que nadie lo pase por alto
+3. Aparece un **efecto de partículas** en tu ubicación
+4. Se crea un **waypoint rojo** marcado como "HELP POSITION" visible para tu equipo (requiere Lunar Client)
+
+## Formato del mensaje
+
+```
+[ALERTA] <tu_nombre> necesita ayuda en <mundo> (X, Y, Z)
+```
+
+## Restricciones
+
+| Parámetro | Valor |
+|---|---|
+| Cooldown | 60 segundos |
+| Duración de la alerta | 30 segundos |
+| Requisito | Estar en un equipo |
+
+<Warning>
+No abuses del sistema de alertas. El cooldown de 60 segundos existe para evitar spam. Úsalo cuando realmente necesites ayuda.
+</Warning>

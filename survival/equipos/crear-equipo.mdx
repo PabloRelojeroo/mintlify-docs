@@ -1,0 +1,69 @@
+---
+title: Crear equipo
+description: Cómo crear y gestionar un equipo en el Survival de Drakense.
+---
+
+# Equipos
+
+Crea tu equipo, invita jugadores, sube de nivel mediante PvP y desbloquea rangos visuales que van desde Novato hasta Leyenda.
+
+
+## Crear un equipo
+
+```
+/team create <nombre>
+```
+
+¿Te sientes capaz junto a tu clan de escalar hasta lo mas grande?
+
+      Puedes juntar a tus amigos, invitar jugadores y crear su propio clan.
+
+- El nombre debe tener entre 3 y 6 caracteres
+- Máximo 30 miembros por equipo
+- Al crear un equipo te conviertes en el Líder
+
+## Gestión básica
+
+| Comando | Descripción |
+|---|---|
+| `/team invite <jugador>` | Invitar a un jugador |
+| `/team join <equipo>` | Aceptar una invitación |
+| `/team leave` | Abandonar tu equipo |
+| `/team kick <jugador>` | Expulsar a un miembro |
+| `/team rename <nuevo_nombre>` | Renombrar el equipo |
+| `/team disband` | Disolver el equipo (solo líder) |
+| `/team info [equipo]` | Ver información del equipo |
+| `/team help` | Ver todos los comandos disponibles |
+
+<Note>
+También puedes usar `/t`, `/teams`, `/f` o `/faction` como alias de `/team`.
+</Note>
+
+## Base del equipo
+
+Para establecer un punto de encuentro para el clan:
+
+| Comando | Descripción |
+|---|---|
+| `/team sethome` | Establecer la base del equipo en tu ubicación actual |
+| `/team home` | Teletransportarte a la base del equipo |
+
+## Chat de equipo
+
+Comunícate de forma privada solo con tu equipo:
+
+```
+/team chat <mensaje>
+```
+
+O la versión corta: `/team c <mensaje>`
+
+Solo los miembros de tu equipo verán el mensaje.
+
+<Tip>
+Puedes alternar completamente tu chat usando el comando ```/team chat``` de esta forma, la gente que se encuentre dentro de tu clan, podrá diferenciar mensajes exclusivos.
+</Tip>
+
+## Fuego amigo / Friendly Fire
+
+El fuego amigo se encuentra deshabilitado por defecto, por lo cual no podrás hacer daño a la gente de tu clan y tampoco a tus aliados.

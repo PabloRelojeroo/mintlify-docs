@@ -1,0 +1,608 @@
+---
+title: Shop
+description: Tienda interactiva del servidor con todos los items disponibles para comprar con dinero y shards.
+---
+
+Accedé a la shop con el comando `/shop`. Desde ahí podés comprar items usando **dinero ($)** o **shards** dependiendo de la categoría.
+
+## Menú Principal
+
+<div style={{display:'flex',justifyContent:'center',margin:'24px 0'}}>
+  <div style={{background:'#C6C6C6',padding:'10px 14px',borderTop:'3px solid #FFFFFF',borderLeft:'3px solid #FFFFFF',borderBottom:'3px solid #555555',borderRight:'3px solid #555555',borderRadius:'2px'}}>
+    <p style={{textAlign:'center',fontFamily:'"Courier New", monospace',color:'#404040',margin:'0 0 8px',fontWeight:'bold',fontSize:'14px',letterSpacing:'1px'}}>ᴛɪᴇɴᴅᴀ</p>
+    <div style={{display:'grid',gridTemplateColumns:'repeat(9, 48px)',gap:'2px'}}>
+
+      <div style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF'}} />
+      <div style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF'}} />
+      <div style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF'}} />
+      <a href="#lanas" title="Lanas" style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF',display:'flex',alignItems:'center',justifyContent:'center',textDecoration:'none',fontSize:'24px',cursor:'pointer'}}>🧶</a>
+      <a href="#combate" title="Combate" style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF',display:'flex',alignItems:'center',justifyContent:'center',textDecoration:'none',fontSize:'24px',cursor:'pointer'}}>⚔️</a>
+      <a href="#bloques-de-colores" title="Bloques de Colores" style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF',display:'flex',alignItems:'center',justifyContent:'center',textDecoration:'none',fontSize:'24px',cursor:'pointer'}}>🧱</a>
+      <div style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF'}} />
+      <div style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF'}} />
+      <div style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF'}} />
+
+      <div style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF'}} />
+      <a href="#protecciones" title="Protecciones" style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF',display:'flex',alignItems:'center',justifyContent:'center',textDecoration:'none',fontSize:'24px',cursor:'pointer'}}>🛡️</a>
+      <a href="#el-final" title="El Final" style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF',display:'flex',alignItems:'center',justifyContent:'center',textDecoration:'none',fontSize:'24px',cursor:'pointer'}}>🟣</a>
+      <a href="#nether" title="Nether" style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF',display:'flex',alignItems:'center',justifyContent:'center',textDecoration:'none',fontSize:'24px',cursor:'pointer'}}>🟥</a>
+      <a href="#equipamiento" title="Equipamiento" style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF',display:'flex',alignItems:'center',justifyContent:'center',textDecoration:'none',fontSize:'24px',cursor:'pointer'}}>✨</a>
+      <a href="#comida-y-cultivos" title="Comida y Cultivos" style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF',display:'flex',alignItems:'center',justifyContent:'center',textDecoration:'none',fontSize:'24px',cursor:'pointer'}}>🥩</a>
+      <a href="#fragmentos-shards" title="Fragmentos (Shards)" style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF',display:'flex',alignItems:'center',justifyContent:'center',textDecoration:'none',fontSize:'24px',cursor:'pointer'}}>💎</a>
+      <a href="#elixires" title="Elixires" style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF',display:'flex',alignItems:'center',justifyContent:'center',textDecoration:'none',fontSize:'24px',cursor:'pointer'}}>🧪</a>
+      <div style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF'}} />
+
+      <div style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF'}} />
+      <div style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF'}} />
+      <a href="#madera" title="Madera" style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF',display:'flex',alignItems:'center',justifyContent:'center',textDecoration:'none',fontSize:'24px',cursor:'pointer'}}>🪵</a>
+      <a href="#piedra" title="Piedra" style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF',display:'flex',alignItems:'center',justifyContent:'center',textDecoration:'none',fontSize:'24px',cursor:'pointer'}}>🪨</a>
+      <a href="#redstone" title="Redstone" style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF',display:'flex',alignItems:'center',justifyContent:'center',textDecoration:'none',fontSize:'24px',cursor:'pointer'}}>🔴</a>
+      <a href="#decoración" title="Decoración" style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF',display:'flex',alignItems:'center',justifyContent:'center',textDecoration:'none',fontSize:'24px',cursor:'pointer'}}>🏮</a>
+      <a href="#vidrio" title="Vidrio" style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF',display:'flex',alignItems:'center',justifyContent:'center',textDecoration:'none',fontSize:'24px',cursor:'pointer'}}>🪟</a>
+      <div style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF'}} />
+      <div style={{width:'48px',height:'48px',background:'#8B8B8B',borderTop:'2px solid #373737',borderLeft:'2px solid #373737',borderBottom:'2px solid #FFF',borderRight:'2px solid #FFF'}} />
+
+    </div>
+  </div>
+</div>
+
+<Note>
+Hacé clic en cualquier ícono del menú para ir directamente a esa categoría. También podés navegar usando el índice lateral.
+</Note>
+
+---
+
+## Combate
+
+**Moneda:** Dinero ($)
+
+Armaduras, armas, herramientas y utilidades de combate.
+
+<Tabs>
+  <Tab title="Armadura de Hierro">
+    | Item | Precio |
+    |------|--------|
+    | Iron Helmet | $1,200 |
+    | Iron Chestplate | $1,800 |
+    | Iron Leggings | $1,500 |
+    | Iron Boots | $1,200 |
+  </Tab>
+  <Tab title="Armadura de Diamante">
+    | Item | Precio |
+    |------|--------|
+    | Diamond Helmet | $6,000 |
+    | Diamond Chestplate | $9,000 |
+    | Diamond Leggings | $7,500 |
+    | Diamond Boots | $6,000 |
+  </Tab>
+  <Tab title="Armas">
+    | Item | Precio |
+    |------|--------|
+    | Iron Sword | $1,200 |
+    | Diamond Sword | $4,500 |
+    | Bow | $2,000 |
+    | Crossbow | $2,800 |
+  </Tab>
+  <Tab title="Herramientas de Hierro">
+    | Item | Precio |
+    |------|--------|
+    | Iron Pickaxe | $1,000 |
+    | Iron Axe | $950 |
+    | Iron Shovel | $850 |
+  </Tab>
+  <Tab title="Herramientas de Diamante">
+    | Item | Precio |
+    |------|--------|
+    | Diamond Pickaxe | $4,000 |
+    | Diamond Axe | $3,800 |
+    | Diamond Shovel | $3,500 |
+  </Tab>
+  <Tab title="Utilidades">
+    | Item | Precio |
+    |------|--------|
+    | Shield | $1,800 |
+    | Arrow | $12 |
+  </Tab>
+</Tabs>
+
+---
+
+## Equipamiento
+
+**Moneda:** Dinero ($)
+
+Items de combate avanzado y utilidades especiales.
+
+| Item | Precio |
+|------|--------|
+| Obsidian | $650 |
+| End Crystal | $1,250 |
+| Respawn Anchor | $1,500 |
+| Glowstone | $320 |
+| Totem of Undying | $8,000 |
+| Ender Pearl | $200 |
+| Golden Apple | $750 |
+| Bottle O' Enchanting | $300 |
+| Wind Charge | $250 |
+| Firework Rocket | $65 |
+
+---
+
+## El Final
+
+**Moneda:** Dinero ($)
+
+Items exclusivos de la dimensión del End.
+
+| Item | Precio |
+|------|--------|
+| Ender Chest | $5,000 |
+| Ender Pearl | $150 |
+| End Stone | $8 |
+| Dragon Breath | $5,000 |
+| End Rod | $100 |
+| Chorus Fruit | $90 |
+| Popped Chorus Fruit | $95 |
+| Shulker Shell | $2,500 |
+| Shulker Box | $6,000 |
+
+---
+
+## Nether
+
+**Moneda:** Dinero ($)
+
+Materiales y drops del Nether.
+
+| Item | Precio |
+|------|--------|
+| Blaze Rod | $150 |
+| Nether Wart | $60 |
+| Glowstone Dust | $30 |
+| Magma Cream | $80 |
+| Ghast Tear | $350 |
+| Nether Quartz | $80 |
+| Soul Sand | $50 |
+| Magma Block | $90 |
+| Crying Obsidian | $150 |
+
+---
+
+## Comida y Cultivos
+
+**Moneda:** Dinero ($)
+
+Alimentos y semillas para tu granja.
+
+<Tabs>
+  <Tab title="Semillas">
+    | Item | Precio |
+    |------|--------|
+    | Wheat Seeds | $8 |
+    | Pumpkin Seeds | $8 |
+    | Melon Seeds | $8 |
+    | Beetroot Seeds | $6 |
+  </Tab>
+  <Tab title="Cultivos">
+    | Item | Precio |
+    |------|--------|
+    | Carrot | $26 |
+    | Potato | $28 |
+    | Beetroot | $26 |
+    | Wheat | $42 |
+    | Sugar Cane | $32 |
+    | Bamboo | $25 |
+  </Tab>
+  <Tab title="Comida">
+    | Item | Precio |
+    |------|--------|
+    | Cooked Porkchop | $30 |
+    | Cooked Beef | $35 |
+    | Golden Carrot | $50 |
+  </Tab>
+</Tabs>
+
+---
+
+## Elixires
+
+**Moneda:** Dinero ($)
+
+Pociones especiales con efectos temporales de gran poder.
+
+| Elixir | Duración | Precio |
+|--------|----------|--------|
+| Néctar Esmeralda | 2 min 30 seg | $15,000 |
+| Néctar Solar | 5 min | $35,000 |
+| Néctar Ígneo | 8 min | $50,000 |
+| Néctar Carmesí | 12 min | $80,000 |
+
+<Warning>
+Los elixires son items especiales que no se stackean. Se entregan de a uno por compra.
+</Warning>
+
+---
+
+## Protecciones
+
+**Moneda:** Dinero ($)
+
+Piedras de protección para asegurar tu base. Cuanto más grande, más caro.
+
+| Protección | Tamaño | Precio |
+|-----------|--------|--------|
+| Protección Cobre | 10x10 | $15,000 |
+| Protección Hierro | 20x20 | $54,000 |
+| Protección Oro | 30x30 | $108,000 |
+| Protección Bambú | 40x40 | $168,000 |
+| Protección Amatista | 50x50 | $225,000 |
+
+---
+
+## Fragmentos (Shards)
+
+**Moneda:** Shards (se obtienen con `/afk`)
+
+Spawners que se compran con fragmentos AFK.
+
+| Spawner | Precio (Shards) |
+|---------|-----------------|
+| Silverfish | 650 |
+| Skeleton | 750 |
+| Breeze | 750 |
+| Zombified Piglin | 750 |
+| Magma Cube | 850 |
+| Blaze | 1,000 |
+| Slime | 1,150 |
+| Enderman | 1,500 |
+| Witch | 1,650 |
+
+<Tip>
+Los spawners se entregan mediante comando. No necesitás espacio en el inventario para recibirlos.
+</Tip>
+
+---
+
+## Redstone
+
+**Moneda:** Dinero ($)
+
+Todos los componentes de redstone para tus granjas y contraptions.
+
+<Tabs>
+  <Tab title="Componentes">
+    | Item | Precio |
+    |------|--------|
+    | Piston | $15 |
+    | Sticky Piston | $20 |
+    | Repeater | $5 |
+    | Comparator | $7 |
+    | Redstone | $60 |
+    | Observer | $15 |
+    | Dispenser | $15 |
+    | Hopper | $35 |
+    | Chest | $80 |
+    | Dropper | $15 |
+  </Tab>
+  <Tab title="Iluminación y Señales">
+    | Item | Precio |
+    |------|--------|
+    | Redstone Torch | $8 |
+    | Redstone Lamp | $45 |
+    | Note Block | $20 |
+    | Daylight Detector | $30 |
+    | Lectern | $90 |
+    | Target | $25 |
+    | Lightning Rod | $80 |
+  </Tab>
+  <Tab title="Activadores">
+    | Item | Precio |
+    |------|--------|
+    | Tripwire Hook | $12 |
+    | Lever | $5 |
+    | Stone Button | $3 |
+    | Stone Pressure Plate | $6 |
+    | Heavy Weighted Pressure Plate | $350 |
+    | Light Weighted Pressure Plate | $150 |
+  </Tab>
+</Tabs>
+
+---
+
+## Madera
+
+**Moneda:** Dinero ($)
+
+Todos los tipos de troncos y maderas descortezadas.
+
+<Tabs>
+  <Tab title="Troncos">
+    | Item | Precio |
+    |------|--------|
+    | Oak Log | $40 |
+    | Spruce Log | $45 |
+    | Birch Log | $40 |
+    | Jungle Log | $45 |
+    | Dark Oak Log | $50 |
+    | Acacia Log | $45 |
+    | Mangrove Log | $55 |
+    | Cherry Log | $60 |
+    | Bamboo Block | $65 |
+  </Tab>
+  <Tab title="Descortezados">
+    | Item | Precio |
+    |------|--------|
+    | Stripped Oak Log | $55 |
+    | Stripped Spruce Log | $60 |
+    | Stripped Birch Log | $55 |
+    | Stripped Jungle Log | $60 |
+    | Stripped Dark Oak Log | $65 |
+    | Stripped Acacia Log | $60 |
+    | Stripped Mangrove Log | $70 |
+    | Stripped Cherry Log | $75 |
+    | Stripped Bamboo Block | $75 |
+  </Tab>
+</Tabs>
+
+---
+
+## Piedra
+
+**Moneda:** Dinero ($)
+
+Bloques de piedra, variantes pulidas y materiales del deep dark.
+
+<Tabs>
+  <Tab title="Piedra Básica">
+    | Item | Precio |
+    |------|--------|
+    | Stone | $20 |
+    | Smooth Stone | $28 |
+    | Cobblestone | $12 |
+    | Andesite | $24 |
+    | Polished Andesite | $30 |
+    | Diorite | $24 |
+    | Polished Diorite | $30 |
+    | Granite | $24 |
+    | Polished Granite | $30 |
+  </Tab>
+  <Tab title="Ladrillos">
+    | Item | Precio |
+    |------|--------|
+    | Stone Bricks | $32 |
+    | Cracked Stone Bricks | $38 |
+    | Mossy Stone Bricks | $40 |
+  </Tab>
+  <Tab title="Deepslate">
+    | Item | Precio |
+    |------|--------|
+    | Cobbled Deepslate | $35 |
+    | Polished Deepslate | $42 |
+    | Deepslate Bricks | $45 |
+    | Deepslate Tiles | $45 |
+  </Tab>
+  <Tab title="Blackstone y Otros">
+    | Item | Precio |
+    |------|--------|
+    | Blackstone | $40 |
+    | Polished Blackstone | $48 |
+    | Polished Blackstone Bricks | $55 |
+    | Basalt | $32 |
+    | Smooth Basalt | $38 |
+    | Calcite | $45 |
+    | Tuff | $38 |
+  </Tab>
+</Tabs>
+
+---
+
+## Decoración
+
+**Moneda:** Dinero ($)
+
+Items decorativos para embellecer tu base.
+
+<Tabs>
+  <Tab title="Iluminación">
+    | Item | Precio |
+    |------|--------|
+    | Sea Lantern | $420 |
+    | Lantern | $260 |
+    | Soul Lantern | $320 |
+    | End Rod | $380 |
+    | Candle | $90 |
+    | Pink Candle | $110 |
+  </Tab>
+  <Tab title="Muebles y Deco">
+    | Item | Precio |
+    |------|--------|
+    | Chain | $180 |
+    | Flower Pot | $120 |
+    | Painting | $190 |
+    | Armor Stand | $260 |
+    | Item Frame | $120 |
+    | Glow Item Frame | $220 |
+    | Bookshelf | $420 |
+    | Lectern | $260 |
+    | Bell | $380 |
+    | Jukebox | $650 |
+    | Note Block | $220 |
+  </Tab>
+  <Tab title="Telas y Alfombras">
+    | Item | Precio |
+    |------|--------|
+    | White Carpet | $70 |
+    | Red Carpet | $80 |
+    | Moss Carpet | $60 |
+    | White Banner | $160 |
+    | Black Banner | $180 |
+  </Tab>
+  <Tab title="Naturaleza">
+    | Item | Precio |
+    |------|--------|
+    | Spore Blossom | $420 |
+    | Big Dripleaf | $210 |
+    | Small Dripleaf | $170 |
+    | Hanging Roots | $140 |
+    | Vine | $70 |
+    | Glow Berries | $120 |
+    | Fern | $80 |
+  </Tab>
+  <Tab title="Cabezas">
+    | Item | Precio |
+    |------|--------|
+    | Skeleton Skull | $260 |
+    | Creeper Head | $420 |
+    | Zombie Head | $420 |
+  </Tab>
+</Tabs>
+
+---
+
+## Vidrio
+
+**Moneda:** Dinero ($)
+
+Bloques y paneles de vidrio de todos los colores.
+
+<Tabs>
+  <Tab title="Vidrio Normal">
+    | Item | Precio |
+    |------|--------|
+    | Glass | $35 |
+    | Tinted Glass | $80 |
+    | Glass Pane | $28 |
+  </Tab>
+  <Tab title="Vidrio de Color">
+    | Item | Precio |
+    |------|--------|
+    | White Stained Glass | $45 |
+    | Black Stained Glass | $45 |
+    | Gray Stained Glass | $45 |
+    | Light Gray Stained Glass | $45 |
+    | Blue Stained Glass | $45 |
+    | Light Blue Stained Glass | $45 |
+    | Cyan Stained Glass | $45 |
+    | Green Stained Glass | $45 |
+    | Lime Stained Glass | $45 |
+    | Red Stained Glass | $45 |
+    | Orange Stained Glass | $45 |
+    | Yellow Stained Glass | $45 |
+    | Pink Stained Glass | $45 |
+    | Purple Stained Glass | $45 |
+    | Magenta Stained Glass | $45 |
+    | Brown Stained Glass | $45 |
+  </Tab>
+  <Tab title="Paneles de Color">
+    | Item | Precio |
+    |------|--------|
+    | White Stained Glass Pane | $35 |
+    | Black Stained Glass Pane | $35 |
+    | Blue Stained Glass Pane | $35 |
+    | Red Stained Glass Pane | $35 |
+    | Green Stained Glass Pane | $35 |
+  </Tab>
+</Tabs>
+
+---
+
+## Lanas
+
+**Moneda:** Dinero ($)
+
+Lana de todos los colores. Precio uniforme: **$90** por unidad.
+
+| Item | Precio |
+|------|--------|
+| White Wool | $90 |
+| Orange Wool | $90 |
+| Magenta Wool | $90 |
+| Light Blue Wool | $90 |
+| Yellow Wool | $90 |
+| Lime Wool | $90 |
+| Pink Wool | $90 |
+| Gray Wool | $90 |
+| Light Gray Wool | $90 |
+| Cyan Wool | $90 |
+| Purple Wool | $90 |
+| Blue Wool | $90 |
+| Brown Wool | $90 |
+| Green Wool | $90 |
+| Red Wool | $90 |
+| Black Wool | $90 |
+
+---
+
+## Bloques de Colores
+
+**Moneda:** Dinero ($)
+
+Terracota y concreto en todos los colores disponibles.
+
+<Tabs>
+  <Tab title="Terracota">
+    Precio uniforme: **$140** por unidad.
+
+    | Item | Precio |
+    |------|--------|
+    | White Terracotta | $140 |
+    | Orange Terracotta | $140 |
+    | Magenta Terracotta | $140 |
+    | Light Blue Terracotta | $140 |
+    | Yellow Terracotta | $140 |
+    | Lime Terracotta | $140 |
+    | Pink Terracotta | $140 |
+    | Gray Terracotta | $140 |
+    | Light Gray Terracotta | $140 |
+    | Cyan Terracotta | $140 |
+    | Purple Terracotta | $140 |
+    | Blue Terracotta | $140 |
+    | Brown Terracotta | $140 |
+    | Green Terracotta | $140 |
+    | Red Terracotta | $140 |
+    | Black Terracotta | $140 |
+  </Tab>
+  <Tab title="Concreto">
+    Precio uniforme: **$220** por unidad.
+
+    | Item | Precio |
+    |------|--------|
+    | White Concrete | $220 |
+    | Orange Concrete | $220 |
+    | Magenta Concrete | $220 |
+    | Light Blue Concrete | $220 |
+    | Yellow Concrete | $220 |
+    | Lime Concrete | $220 |
+    | Pink Concrete | $220 |
+    | Gray Concrete | $220 |
+    | Light Gray Concrete | $220 |
+    | Cyan Concrete | $220 |
+    | Purple Concrete | $220 |
+    | Blue Concrete | $220 |
+    | Brown Concrete | $220 |
+    | Green Concrete | $220 |
+    | Red Concrete | $220 |
+    | Black Concrete | $220 |
+  </Tab>
+</Tabs>
+
+---
+
+## Sistema de compra
+
+Al hacer clic en un item de la shop, se abre un **menú de confirmación** donde podés ajustar la cantidad:
+
+| Acción | Descripción |
+|--------|-------------|
+| **+1 / +10 / Set 64** | Aumentar la cantidad a comprar |
+| **-1 / -10 / -64** | Reducir la cantidad |
+| **Confirmar** | Comprar la cantidad seleccionada |
+| **Cancelar** | Volver sin comprar |
+
+<Warning>
+Algunos items tienen restricciones de cantidad. Por ejemplo, el **Totem of Undying** solo se puede comprar de a **1 por transacción**.
+</Warning>
+
+<Note>
+Si no tenés suficiente dinero o shards, la compra no se realiza. Asegurate de tener fondos antes de confirmar.
+</Note>
