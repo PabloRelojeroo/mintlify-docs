@@ -88,8 +88,8 @@
     }
   },
   "logo": {
-    "light": "https://imgur.com/a/18EETqg#nQGTm26.png",
-    "dark": "https://imgur.com/a/18EETqg#nQGTm26.png"
+    "light": "/dark.svg",
+    "dark": "/dark.svg"
   },
   "navbar": {
     "links": [
